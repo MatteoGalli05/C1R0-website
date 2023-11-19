@@ -1,0 +1,272 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /*background-color: #e2e2e2;*/ 
+  background-color: white;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px 8%;
+}
+
+.left-path {
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.right-path {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+.element {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.element:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.element > a {
+  text-decoration: none;
+  color: unset;
+}
+
+.active {
+  background-color: white;
+  color: black;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background-color: black;
+  color: white;
+}
+
+.header-50 {
+  width: 50%;
+  padding: 0 5%;
+}
+.header-50-image {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-image {
+  object-fit: scale-down;
+  height: 50%;
+  transform: translateY(300px);
+}
+
+.title,
+.intro-pricing {
+  font-weight: 900;
+  font-size: 150px;
+}
+.intro-pricing {
+  margin: 150px 0px 50px 0px;
+}
+.description {
+
+  font-weight: 300;
+  font-size: 30px;
+}
+
+main {
+  padding: 5% 0;
+
+  margin:  500px 0px 0px 0;
+  font-weight: 300;
+  font-size: 30px;
+  background-color: white;
+}
+.intro-service {
+  margin: 7% 8%;
+}
+
+.intro-service,
+.card-pricing {
+  transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.intro-service > h1 {
+  color: black;
+}
+
+.card-pricing {
+  padding: 3% 8%;
+  background-color: black;
+}
+
+.intro-pricing {
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.card {
+  border: 3px solid black;
+  background-color: #e2e2e2;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0 2%;
+  border-radius: 20px;
+  min-height: 500px;
+  width: 30%;
+}
+.card > .title,
+.card > .description {
+  margin-bottom: 10px;
+}
+.card > .description {
+  font-size: 20px;
+}
+
+.image-plane > img {
+  width: 100%;
+  object-fit: scale-down;
+  border-radius: 20px;
+}
+.card > .title {
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.moreInfo {
+  border: 3px solid black;
+  width: fit-content;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.moreInfo:hover {
+  background-color: black;
+  color: white;
+}
+
+.viewed {
+  opacity: 1 !important;
+}
+
+.aboutUS-home{
+    padding: 8%;
+}
+
+.component{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.person{
+    min-width: 30%;
+    max-width: 40%;
+    position: relative;
+    padding: 3% 5%;
+    margin: 5% 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.icon > img{
+    position: absolute;
+    top: calc(50%-25px);
+    object-fit: cover;
+    left: -25px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.name{
+    font-weight: 900;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 30vh;
+    width: 100%;
+}
+
+.aboutUS > * > *{
+  padding: 0 5%;
+}
+
+
+
+.aboutUS-element{
+  padding: 60px;
+
+}
+.aboutUS-element:nth-child(1), .aboutUS-element:nth-child(3),.aboutUS-element:nth-child(5){
+  background-color: black;
+  color: white;
+}
+
+.aboutUS > .aboutUS-element > .title{
+  font-size: 84px;
+}
+
+
+
+.description > .title{
+  font-size: 40px;  
+  padding: 20px ;
+  padding: 20px 0 ;
+}
+
+.description > ul > li{
+  margin: 20px 0;
+}
+
+#organigramma{
+  margin: 50px 0 ;
+  width: 60%;
+}
