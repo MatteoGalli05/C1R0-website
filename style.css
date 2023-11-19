@@ -270,3 +270,16 @@ footer{
   margin: 50px 0 ;
   width: 60%;
 }
+
+.image > img{
+  max-width: 50%;
+}
+
+.main-pricing{
+  margin: 5%;
+}
+
+.main-pricing > .card{
+  width: 90%;
+  
+}
